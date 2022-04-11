@@ -20,14 +20,15 @@
 
 </head>
 
-<body style="font-family: roboto;">
-    <header style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode';">
-        <nav>
-            | <a href="#somos"> Quem somos neste <strong> BCW18 </strong></a> |
-            <a href="#cronograma">Cronograma do <strong> BCW18 </strong></a> |
-            <a href="#dicas">Dicas do team <strong> BCW18 </strong></a> |
-            <a href="#trabalho">otientações de Trabalho como Dev</a> |
-        </nav>
+<body>
+    <header>
+        <ul>
+            <li><a href="#Cadastrar"> #Cadastrar </a></li>
+            <li><a href="#Trajetoria">#Trajetoria</strong></a></li>
+            <li><a href="#Dicas">#dicas</a></li>
+            <li><a href="#Trabalho">#trabalho</a></li>
+        </ul>
+        
         <ul>
             <li>Participantes</li>
             <ul>
@@ -35,13 +36,13 @@
                 <li>Professores</li>
                 <li>Convidados</li>
             </ul>
-            
-            
-            
+
+
+
         </ul>
     </header>
     <main>
-        <div style="width: 500px;">
+        <div  class="divisorbase"  id="trajetoria">
             <h1>Trajetória de Sucesso ...</h1>
             <table>
                 <tr>
@@ -101,6 +102,62 @@
             </table>
 
         </div>
+        <div  class="divisorbase" id="cadastrar">
+
+        </div>
+        <div>
+            <form action="#" method="" id="">
+                <div>
+                    <input type="hidden" id="id">
+                </div>
+                <div>
+                    <label for="nome"> NOME :  </label>
+                    <input type="text" id="nome" aria-placeholder=" Entre com seu Nome">
+                </div>
+                <div>
+                    <label for="email"> E-MAIL : </label>
+                    <input type="email" id="email" aria-placeholder="Entre com seu email">
+                </div>
+                <div>
+                    <label for="nascimento"> DATA DE NASCIMENTO : </label>
+                    <input type="date" id="nascimento">
+
+                </div>
+                <div>
+                    <label for="deficiente"> DEFICIENCIA : </label>
+                    <input type="checkbox" id="deficiencia" checked>
+                    
+                </div>
+                <div>
+                    <label for="senha">SENHA </label>
+                    <input type="password" id="senha" placeholder="Entre com a senha :">
+                </div>
+                <div>
+                    <label for="escolaridade">NÉVEL ESCOLAR : </label><br>
+                    <input type="radio" name="escolaridade" id="escolaridade">FUNDAMENTAL <br>
+                    <input type="radio" name="escolaridade" id="escolaridade">MÉDIO <br>
+                    <input type="radio" name="escolaridade" id="escolaridade">TECNÓLOGO <br>
+                    <input type="radio" name="escolaridade" id="escolaridade">LICENCIADO <br>
+                    <input type="radio" name="escolaridade" id="escolaridade">PÓS GRADUADO <br>
+                    <input type="radio" name="escolaridade" id="escolaridade">DOUTORADO <br>
+                </div>
+                <div>
+                    <label for="experiencia"> Qual foi sua experiência com programação</label>
+                    <input type="range" id="experiencia" min="10" max="80"
+                    oninput="display.value=value" onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                    onchange="experiencia.value=value" maxlength="3">
+                </div>
+                <div>
+                    <label for="descricao">DESCRIÇÃO DA EXPERIÊNCIA:</label><br>
+                    <textarea id="descricao" cols="70" rows="7" placeholder="ENTRE COM AS TECNOLOGIAS"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </div>
+            </form>
+        
     </main>
     <footer>
 
