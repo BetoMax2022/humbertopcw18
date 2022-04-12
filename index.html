@@ -7,102 +7,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="./js/action.js"></script>
+    <!--passagem por endereçamento-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Cookie&family=Kranky&family=Pacifico&family=Roboto:ital,wght@0,300;0,500;1,400;1,900&display=swap"
         rel="stylesheet">
-    <!--passagem por endereçamento-->
-    <script src="./js/action.js"></script>
+
 
     <title> Pagina de Start BCW18 </title>
 
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="" srcset="imagem do logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de desenvolvimento Web full Stack da SoulCode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
-            <li><a href="#Cadastrar"> #Cadastrar </a></li>
-            <li><a href="#Trajetoria">#Trajetoria</strong></a></li>
-            <li><a href="#Dicas">#dicas</a></li>
-            <li><a href="#Trabalho">#trabalho</a></li>
+            <li><a href="#cadastrar"> #Cadastrar </a></li>
+            <li><a href="#trajetoria">#Trajetoria</a></li>
+            <li><a href="#dicas">#Dicas</a></li>
+            <li><a href="#trabalho">#Trabalho</a></li>
         </ul>
-        
-        <ul>
-            <li>Participantes</li>
-            <ul>
-                <li>Alunos</li>
-                <li>Professores</li>
-                <li>Convidados</li>
-            </ul>
-
-
-
         </ul>
     </header>
     <main>
-        <div  class="divisorbase"  id="trajetoria">
-            <h1>Trajetória de Sucesso ...</h1>
-            <table>
-                <tr>
-                    <th><strong>FASE</strong></th>
-                    <th><strong>DESCRIÇÃO</strong></th>
-                    <th><strong>IMAGEM</strong></th>
-
-                </tr>
-                <tr>
-                    <td>Primeira Fase</td>
-                    <td>
-                        Inscrição no site oficial, execução do teste de lógica na trilha
-                        zero e montagem do Pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img width="180px" height="180" src="./img/imagem3.jpg" alt="Ato de inscrição">
-                            <figcaption>Fig.1 -- ato de inscrição </figcaption>
-
-                        </figure>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda Fase</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem3.jpg">
+                        <img src="/img/imagem3.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
                         Testes trilha zero e entrevista com recrutador para avalição de bolsa,
                         nesta fase se analisa a elegibilidade para a bolsa de estudos perante perante os clientes e os
                         canditados.
-                    </td>
-                    <td>
-                        <figure>
-                            <img width="180px" height="180px" src="./img/imagem2.jpg"
-                                alt="Teste de Lógica para seleção">
-
-                            <figcaption>Fig.2 -- Teste de Lógica para seleção </figcaption>
-
-                        </figure>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceira Fase</td>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem2.jpg">
+                        <img src="/img/imagem2.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
+                        Testes trilha zero e entrevista com recrutador para avalição de bolsa,
+                        nesta fase se analisa a elegibilidade para a bolsa de estudos perante perante os clientes e os
+                        canditados.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem1.jpg">
+                        <img src="/img/imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
                         Dinâmica de grupo onde os candidatos se dividem em grupos iguais, cada
                         grupo tem o objeto de resolverem questões juntos.
-                    </td>
-                    <td>
-                        <figure>
-                            <img width="180px" height="180px" src="./img/imagem1.jpg" alt="Aprovação e convocação">
-                            <figcaption>Fig.3 -- Aprovação e convocação </figcaption>
+                    </div>
+                </div>
+            </div>
 
-                        </figure>
-
-                    </td>
-                </tr>
-            </table>
-
+            <h1>Trajetória de Sucesso ...</h1>
         </div>
-        <div  class="divisorbase" id="cadastrar">
+        <div class="divisorbase" id="cadastrar">
 
         </div>
         <div>
@@ -111,7 +87,7 @@
                     <input type="hidden" id="id">
                 </div>
                 <div>
-                    <label for="nome"> NOME :  </label>
+                    <label for="nome"> NOME : </label>
                     <input type="text" id="nome" aria-placeholder=" Entre com seu Nome">
                 </div>
                 <div>
@@ -126,7 +102,7 @@
                 <div>
                     <label for="deficiente"> DEFICIENCIA : </label>
                     <input type="checkbox" id="deficiencia" checked>
-                    
+
                 </div>
                 <div>
                     <label for="senha">SENHA </label>
@@ -143,10 +119,10 @@
                 </div>
                 <div>
                     <label for="experiencia"> Qual foi sua experiência com programação</label>
-                    <input type="range" id="experiencia" min="10" max="80"
-                    oninput="display.value=value" onchange="display.value=value">
+                    <input type="range" id="experiencia" min="10" max="80" oninput="display.value=value"
+                        onchange="display.value=value">
                     <input type="text" id="display" value="0" oninput="experiencia.value=value"
-                    onchange="experiencia.value=value" maxlength="3">
+                        onchange="experiencia.value=value" maxlength="3">
                 </div>
                 <div>
                     <label for="descricao">DESCRIÇÃO DA EXPERIÊNCIA:</label><br>
@@ -157,7 +133,7 @@
                     <input type="reset" value="LIMPAR">
                 </div>
             </form>
-        
+
     </main>
     <footer>
 
